@@ -1,4 +1,10 @@
 # Starter pipeline
+- task: AzurePowerShell@4
+  inputs:
+    azureSubscription: 'Visual Studio Enterprise(bd180e23-6023-47e5-8343-b0d75c468061)'
+    ScriptType: 'FilePath'
+    ScriptPath: 'diskmovement.ps1'
+    azurePowerShellVersion: 'LatestVersion'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
